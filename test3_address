@@ -1,0 +1,9 @@
+import easygui
+Name = easygui.enterbox("姓名： ")
+Room = easygui.enterbox("房间号： ")
+Street = easygui.enterbox("街道： ")
+City = easygui.enterbox("城市： ")
+Province = easygui.enterbox("省份： ")
+Code = easygui.enterbox("邮编： ")
+Add = Name + "\n" + Room + Street + City + "\n" + Province + "\n" +Code
+easygui.msgbox(Add,"Here is your address:")
