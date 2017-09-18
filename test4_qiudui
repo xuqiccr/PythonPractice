@@ -1,0 +1,10 @@
+# -*- coding:GBK -*-
+sexual = str(raw_input("请输入你的性别："))
+if sexual == 'm':
+    print "你不可以加入球队！"
+else:
+    age = float(raw_input("请输入你的年龄："))
+    if 10<= age<=12:
+        print "你可以加入球队！"
+    else:
+        print "你不可以加入球队！"
