@@ -1,6 +1,9 @@
 import time
 Time = int(raw_input("Countdown timer: How many second? "))
 for i in range (Time, 0, -1):
-    print i
+    print i, 
+    for star in range (i):
+        print "*",
+    print
     time.sleep(1)
 print "BLAST OFF!"
