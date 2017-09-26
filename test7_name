@@ -4,6 +4,8 @@ for i in range(5):
     name = raw_input()
     nameList.append(name)
 
-print "The  names are ",nameList
-nameList.sort()
-print "There are :",nameList
+print "The name are :",nameList
+i = int(raw_input("Replace one name.Which one?"))
+new_Name = str(raw_input("New name: "))
+nameList[i - 1] = new_Name
+print "The name are : ",nameList
