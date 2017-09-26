@@ -1,0 +1,15 @@
+Dictionary = {}
+while 1:
+    i = raw_input("Add or look up a word (a/l)?")
+    if i == 'a':
+        word = str(raw_input("Type the word: "))
+        definition = str(raw_input("Type the definition: "))
+        Dictionary[word] = definition
+        print "Word added!"
+    else:
+        word = str(raw_input("Type the word: "))
+        if word in Dictionary:
+            print Dictionary[word]
+        else:
+            print "The word isn't in the dictionary yet."
+    break
