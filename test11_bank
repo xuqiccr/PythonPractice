@@ -1,0 +1,35 @@
+class BankAccount:
+    def __init__(self, number, name):
+        self.name = name
+        self.number = number
+        self.balance = 0.0
+    def bal(self):
+        print "The balance is",self.balance
+    def save(self, amount):
+        self.balance = self.balance + amount
+        print "You save ", amount
+        print "You have ", self.balance,"now."
+    def draw(self, amount):
+        if amount <= self.balance:
+            self.balance = self.balance - amount
+            print "You draw ",amount
+            print "You have ",self.balance,"now"
+        else:
+            print "You have ",self.balance
+            print "You want to draw ", amount
+            print "Not enough."
+class InterestAccount(BankAccount):
+    def __init__(self, number, name, rate):
+        BankAccount.__init__(self, number, name)
+        self.rate = rate
+    def addInterest (self):
+        interest = self.balance * self.rate
+        print "adding interest to the account,",self.rate * 100,"percent"
+        self.save(interest)
+        
+myAccount = InterestAccount(234567,"Tom", 0.11)
+print "Account name:",myAccount.name
+print "Account number:",myAccount.number
+myAccount.bal()
+myAccount.save(34.52)
+myAccount.addInterest()
