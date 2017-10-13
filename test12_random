@@ -1,0 +1,6 @@
+from time import  sleep
+import random
+for i in range(10):
+    print random.random()
+    i+3
+    sleep(3)
