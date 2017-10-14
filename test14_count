@@ -1,0 +1,9 @@
+#-*-coding:utf-8-*-
+i = float(raw_input('输入第一个数：'))
+j = float(raw_input('输入第二个数：'))
+a = i + j - i * j + i / j
+print i,' +', j,' - ', i,' * ', j,' + ', i,' / ', j ,' =', a
+b = i % j
+print i,'和',j,'的余数为：',b
+c = i ** j
+print i,'的',j,'次方为：',c
