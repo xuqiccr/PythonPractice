@@ -1,0 +1,25 @@
+#用while
+print 'Enter five number'
+v = []
+i = 0
+s = 0
+while i < 5 :
+    a = input('n % d = ' % (i + 1))
+    v.extend([int(a)])
+    s = s + v[i]
+    i += 1
+    if i == 5:
+        print('sum=%d' % s)
+        
+    
+#用for
+print('Enter five number')
+v=[]
+i=0
+s=0
+for i in range(5):
+    a = input('n%d= ' % (i + 1))
+    v.extend([a])
+    s = s + v[i]
+    if i == 4:
+        print ('sun = %d' % (s))
