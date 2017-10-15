@@ -1,0 +1,16 @@
+while 1:
+    print '1、取和，2、取平均数，3、退出'
+    n = int(raw_input())
+    if n == 1 or n == 2:
+        n1 = float(raw_input('n1 = '))
+        n2 = float(raw_input('n2 = '))
+        n3 = float(raw_input('n3 = '))
+        n4 = float(raw_input('n4 = '))
+        n5 = float(raw_input('n5 = '))
+        s = n1 + n2 + n3 + n4 + n5
+        if n == 1:
+            print '和为',s
+        else:
+            print '平均数为', s / 5
+    else:
+        break
