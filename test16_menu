@@ -1,4 +1,4 @@
-while 1:
+while True:
     print '1、取和，2、取平均数，3、退出'
     n = int(raw_input())
     if n == 1 or n == 2:
