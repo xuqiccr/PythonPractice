@@ -1,0 +1,22 @@
+#coding = utf-8
+while 1:
+    s = raw_input('请输入要计算的式子：')
+    if s.find('+') == 1:
+        i1 = s.split('+')
+        print float(i1[0]) + float(i1[1])
+    elif s.find('-') == 1:
+        i2 = s.spilt('-')
+        print float(i2[0]) - float(i2[1])
+    elif s.find('*') == 1:
+        i3 = s.split('*')
+        print float(i3[0]) * float(i3[1])
+    elif s.find('/') == 1:
+        i4 = s.split('/')
+        print float(i4[0]) / float(i4[1])
+    elif s.find('%') == 1:
+        i5 = s.split('%')
+        print float(i5[0]) % float(i5[1])
+    elif s.find('*') == 2:
+        i6 = s.split('**')
+        print float(i6[0]) ** float(i6[1])
+
